@@ -1,29 +1,43 @@
+body {
+  font-family: "alphabet-soup-pro", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
 h2 {
-  font-size: 32px;
+  font-size: 52px;
   text-align: center;
   margin: 10px 0 10px 0;
 }
 
 
 .hero {
-    background-image: url("../images/prod_hero_desktop.webp");
+    background-image: url("../images/prod_hero_mob.webp");
     background-size: cover;
     background-position: center;
-    min-height: 400px;
-
+    min-height: 562px;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 20px 0 20px 0;
+    border-radius: 30px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 768px) {
   .hero {
     background-image: url("../images/prod_hero_tab.webp");
   }
 }
 
-@media screen and (max-width: 412px) {
+/* desktop */
+
+@media screen and (min-width: 1200px) {
   .hero {
-    background-image: url("../images/prod_hero_mobile.webp");
+    background-image: url("../images/prod_hero_desktop.webp");
   }
+}
+
+#css-img {
+  font-size: 92px;
+  color: white;
 }
