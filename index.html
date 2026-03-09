@@ -5,16 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/grid.css" rel="stylesheet" type="text/css">
     <link href="css/main.css" rel="stylesheet" type="text/css">
-    <title>Picture Element</title>
+    <title>Responsive Image Sizing</title>
 </head>
     <body>
         <section class="grid-con center-grid-con">
-            <picture class="col-start-2 col-end-4 m-col-span-full">
-                <source srcset="images/recycle_desk.webp" media="(min-width: 768px)" alt="Plastic bottles">
-                <img src="images/recycle_mobile.webp" alt="Pig in pen">
-            </picture>
-
+            <div class="col-span-full">
+                <img
+                    sizes="
+                    (min-width: 1200px) 900px,
+                    (min-width: 768px) 600px,
+                    100vw""
+                    srcset="
+                    billboard_desktop_tivvgz_c_scale,w_320.webp 320w,
+                    billboard_desktop_tivvgz_c_scale,w_883.webp 883w,
+                    billboard_desktop_tivvgz_c_scale,w_900.webp 900w"
+                    src="billboard_desktop_tivvgz_c_scale,w_900.webp"
+                    alt="Billboard image of Squeezit advertisement">
+            </div>
         </section>
+
+
+
+
+        <section class="grid-con center-grid-con">
+            <h2 class="col-span-full">SQUEEZE THE GOOD, SAVE THE WASTE</h2>
+            <picture class="col-span-full m-col-span-full">
+                <source srcset="images/recycle_desk.webp" media="(min-width: 768px)" alt="Plastic bottles">
+                <img src="images/recycle_mobile.webp" alt="Plastic bottles">
+            </picture>
+        </section>
+
+
 
 
 
