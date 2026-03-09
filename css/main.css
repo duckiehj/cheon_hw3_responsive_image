@@ -3,13 +3,3 @@ h2 {
   text-align: center;
   margin: 10px 0 10px 0;
 }
-
-picture {
-  display: block;
-}
-
-picture img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
