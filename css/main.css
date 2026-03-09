@@ -3,3 +3,27 @@ h2 {
   text-align: center;
   margin: 10px 0 10px 0;
 }
+
+
+.hero {
+    background-image: url("../images/prod_hero_desktop.webp");
+    background-size: cover;
+    background-position: center;
+    min-height: 400px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 767px) {
+  .hero {
+    background-image: url("../images/prod_hero_tab.webp");
+  }
+}
+
+@media screen and (max-width: 412px) {
+  .hero {
+    background-image: url("../images/prod_hero_mobile.webp");
+  }
+}
